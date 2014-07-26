@@ -1,0 +1,68 @@
+.carousel_paging 
+{
+	border-radius: 10px;			
+	background: #ccc;
+	width: 10px;
+	height: 10px;
+	display:inline-block;
+}
+		
+.carousel_paging_selected {
+	border-radius: 10px;			
+	background: #000;
+	width: 10px;
+	height: 10px;
+	display:inline-block;
+}
+		
+#panel_login{
+	overflow:hidden;
+}
+
+#afui #panel_login label{
+	width:20%;
+}
+
+#afui #p_login_btn_group{
+	clear:both;
+	width:100%
+}
+
+#afui #p_login_btn_group a{
+	width:49%
+}
+
+#afui #panel_home {
+	padding:0;
+}
+
+#afui #panel_home .mygrid{
+	width:100%;
+	margin:5% 5%;
+}
+
+#afui #panel_home .mygrid a{
+	width:35%;
+	margin:0 5%;
+	font-size:18px;
+}
+
+#panel_myshop .list li{
+	padding:5px 10px;
+	
+}
+
+#panel_myshop .list p{
+	line-height:14px;
+	font-size:10px;
+	
+}
+
+#panel_sale .list li{
+	padding:5px 10px;
+}
+
+#afui #panel_sourcing {
+	padding:0;
+	height:100%;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no" />
+        <meta name="msapplication-tap-highlight" content="no" />        
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/af.ui.css" title="default"/>
+        <script type="text/javascript" charset="utf-8" src="appframework.js"></script>  
+        <script type="text/javascript" charset="utf-8" src="appframework.ui.js"></script>
+        <script type="text/javascript" charset="utf-8" src="plugins/af.carousel.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        	$.ui.useOSThemes=false;
+        </script>        
+        <title>wei8</title>
+    </head>
+    <body>
+        <div id="afui" class="ios7">
+        	<!--   header start         -->
+            <header id="header_main">
+                <h1>微 八 千</h1>
+            </header>
+            <!--   header end           -->
+        	<!--   footer start         -->
+            <footer id="main_footer" >
+                <a class="icon home pressed" href="#panel_home">微八千</a>
+                <a class="icon heart" href="#collection">收藏</a>
+                <a class="icon info" href="#panel_recommend">推荐</a>
+                <a class="icon user" href="#panel_user">我</a>
+            </footer>
+            <!--   footer end            -->
+                
+        	<div id="content">
+            	<div id="panel_login" data-header="header_main" class="panel" data-footer="none" selected="true" style="overflow:hidden" data-load="app.login_load" data-unload="app.login_unload">
+                    <div class="formGroupHead">登录微八千</div>
+                	<form>
+                      <div class="input-group" style="margin:20px 0">
+                        <label for="frm_username" >账 号 :</label><input id="frm_username" type="text" >
+                        <label for="frm_psw">密 码 :</label><input id="frm_psw" type="password" >
+                        <div id="p_login_btn_group">
+                            <a id="regist" class="button" data-transition="none">注 册</a>
+                            <a id="login" class="button" data-transition="none">登 录</a>
+                        </div>
+                        <!--  <input type="submit" class="button" value="登 录">  -->
+                      </div>
+                    </form>
+                    <h2>关于微八千：</h2>
+                    <p>1、让世界看到您的产品；</p>
+                </div>
+                <div id="panel_home" class="panel" data-footer="main_footer" style="overflow:hidden" data-load="app.home_load">
+                	<header id="header_main">
+                        <h1>微 八 千</h1>
+                        <a href="#panel_record" class="icon pencil button" style="float:right">记录</a>
+                    </header>
+                    <div id="carousel_dots" style="width:100%;text-align:center;  display:table; clear:both; position:absolute; top:23%;right:0px; z-index: 200">
+                    </div>
+                    <div id="carousel_panel_home" style="display:block;height:28.125%;width:100%;">
+                        <div style="background: yellow;">
+                            <a><img src="img/gucci.jpg" alt="" style="width:100%;height:100%" /></a>
+                        </div>
+                        <div style="background: green;">
+                        	<a><img src="img/lv.jpg" alt="" style="width:100%;height:100%" /></a>
+                        </div>
+                        <div style="background: blue;">
+                        	<a><img src="img/burberry.jpg" alt=""  style="width:100%;height:100%"/></a>
+                        </div>
+                        <div style="background: pink;"></div>
+                    </div>
+                    <div class="mygrid">
+                        <a href="#panel_myshop" class="button" >我 的<br/>店 铺</a>
+                        <a href="#panel_sourcing" class="button" >我 要<br/>找 货</a>
+                    </div>
+                    <div class="mygrid" >
+                        <a href="#panel_promotion" class="button">我 要<br/>推 广</a>
+                        <a href="#panel_sale" class="button">特 价<br/>清 仓</a>
+                    </div>                    
+                </div>
+                
+                <div id="panel_recommend" class="panel" data-footer="main_footer">
+                	<header>
+                        <h1>推 荐</h1>
+                    </header>
+                    <ul class="list">
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div id="panel_user" class="panel" data-footer="main_footer" style="overflow:hidden">
+                	<header>
+                        <h1>微 八 千</h1>
+                    </header>
+                	<h3>亲爱的：Ruigoumei</h3>
+                    <p>您当前是：付费会员  有效时间：永久</p>
+                    <p>好友上限：10 产品上限：888</p>
+                    <a class="button">会员特权</a> <a class="button">消息中心</a>
+                    <p>成为会员请联系：郭生 188 8888 8888 </p>
+                    <ul class="list">
+                    	<li>
+                            <label>图片水印开关：</label><input id="toggle1" checked="" name="toggle1" value="1" class="toggle" type="checkbox">
+                              <label for="toggle1" data-on="On" data-off="Off">
+                                 <span></span>
+                              </label>
+                        </li>
+                        <li>
+                        	<a >清除缓存</a>
+                        </li>
+                        <li>
+                        	<a >返回登录</a>
+                        </li>
+                        <li>
+                        	<a >退出应用程序</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                <div id="panel_record" data-title="记 录" class="panel" data-footer="none">
+                	<ul class="list">
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div id="panel_myshop" data-title="我 的 店 铺" class="panel" data-footer="none">
+                	
+                    <h3 >广大一期凰城宾馆8502 <a class="button" style="float:right">发布商品</a></h3>
+                    <div style="width:40%;float:left;"><a>微信：</a>  </div>
+                    <div>电话：</div>
+                    <p>地址：广大一期凰城宾馆8502</p>
+                    
+                    <div>
+                    	<ul class="list">
+                            <li>
+                                <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+	                            <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+                            	<img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+                            	<img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+                            	<img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+                            	<img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                            <li>
+                            	<img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                                <b >原单外贸LV女鞋</b>
+                                <p >7天包退换 批发价：220</p>
+                                <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                                <p >编号：2046 日期：2014-06-26</p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                
+                <div id="panel_sourcing" data-title="我 要 找 货" class="panel" data-footer="none" >
+                    <div id="carousel_dots_panel_sourcing" style="width:100%;text-align:center;  display:table; clear:both; position:absolute; top:23%;right:0px; z-index: 200">
+                    </div>
+                    <div id="carousel_panel_sourcing" style="height:280px;display:block;width:100%;">
+                        <div style="background: yellow;">
+                            <a><img src="img/gucci.jpg" alt="" style="width:100%;height:100%" /></a>
+                        </div>
+                        <div style="background: green;">
+                        	<a><img src="img/lv.jpg" alt="" style="width:100%;height:100%" /></a>
+                        </div>
+                        <div style="background: blue;">
+                        	<a><img src="img/burberry.jpg" alt=""  style="width:100%;height:100%"/></a>
+                        </div>
+                        <div style="background: pink;"></div>
+                    </div>
+                    
+                    <input placeholder="请输入编号或关键字" type="text" style="width:75%;margin:5px;">
+                    <a class="button">查找</a>
+                    
+                    <ul class="list">
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:60px;height:60px;margin:0px 5px;float:left"/>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div id="panel_promotion" data-title="我 要 推 广" class="panel" data-footer="none" >
+                	<h2>推广方案：</h2>
+                    <p>1，工厂会员；</p>
+                    <p>2，卖家会员；</p>
+                    <p>3，广告位；</p>
+                    
+                </div>
+                
+                <div id="panel_sale" data-title="特 价 清 仓" class="panel" data-footer="none" style="overflow:hidden">
+                	<ul class="list">
+                		<li>
+                            <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                            <b >原单外贸LV女鞋</b>
+                            <p >7天包退换 批发价：220</p>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                            <b >原单外贸LV女鞋</b>
+                            <p >7天包退换 批发价：220</p>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                            <b >原单外贸LV女鞋</b>
+                            <p >7天包退换 批发价：220</p>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                        <li>
+                            <img src="img/shop.jpg" style="width:80px;height:80px;margin:5px 5px;float:left"/>
+                            <b >原单外贸LV女鞋</b>
+                            <p >7天包退换 批发价：220</p>
+                            <div style="font-size:10px;height:24px;overflow:hidden">原单外贸LV女鞋，进口羊京，内里上等羊皮，踮脚采用珠光，京，内里上等羊皮进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光进口羊京，内里上等羊皮，踮脚采用珠光踮</div>
+                            <p >编号：2046 日期：2014-06-26</p>
+                        </li>
+                	</ul>
+                </div>
+                
+            
+            </div>
+            
+        </div>
+        <!--  script type="text/javascript" src="cordova.js"></script -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
